@@ -119,6 +119,17 @@ variables:
 - name: cf_mysql_proxy_api_password
   type: password
 
+- name: cf_mysql_broker_db_password
+  type: password
+- name: cf_mysql_broker_auth_password
+  type: password
+- name: cf_mysql_broker_cookie_secret
+  type: password 
+- name: cf_mysql_p_mysql_dashboard_secret
+  type: password
+- name: cf_mysql_broker_quota_enforcer_password
+  type: password  
+
 releases:
 - name: cf-mysql
   url: https://bosh.io/d/github.com/cloudfoundry/cf-mysql-release?v=34
