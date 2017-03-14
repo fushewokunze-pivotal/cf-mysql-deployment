@@ -14,7 +14,7 @@ instance_groups:
   networks: [{name: private}]
   vm_type: m3.large
   stemcell: default
-  persistent_disk: 10000
+  persistent_disk: 100000
   jobs:
   - {release: cf-mysql, name: mysql}
   migrated_from:
