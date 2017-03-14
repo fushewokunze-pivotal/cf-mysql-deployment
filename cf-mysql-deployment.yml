@@ -13,6 +13,8 @@ instance_groups:
   azs: [z1, z2]
   networks: [{name: private}]
   vm_type: m3.large
+  vm_extensions:
+  - 100GB_ephemeral_disk
   stemcell: default
   persistent_disk: 100000
   jobs:
